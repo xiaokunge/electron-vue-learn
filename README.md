@@ -10,7 +10,9 @@
 
 - 2、在工程目录添加electron，然后可以在package.json的devDependencies字段看见安装的依赖，dev的依赖用在开发中，正式打包app的时候不会打包。
 
-     cnpm install --save-dev electron
+    cnpm install --save-dev electron
+
+    `tip：如果执行 electron . 或者 npm start失败，是electron的源不对，参考：https://zhuanlan.zhihu.com/p/108380451`
 
 - 3、package.json的main字段指定了工程的入口，也就是nodejs的主进程，所以我们需要手动创建main.js，main.js负责创建第一个窗口，详细看main.js
 
